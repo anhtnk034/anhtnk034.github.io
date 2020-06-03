@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> 28-5-20 Lap07 Bài 3</title>
+</head>
+<body>
+    <h2> Form Đăng Ký </h2>
+    <form onsubmit="return kiem_tra()">
+        <p>
+            <label> Họ </label>
+            <input type="text" id="ho"/>
+
+        </p>
+
+        <p>
+            <label> Tên </label>
+            <input type="text" id="ten"/>
+
+        </p>
+
+        <p>
+            <label> Ngày Sinh: </label>
+            <label> Ngày </label><input type="number" id="ngay" min="1" max="31" required>
+            <label> Tháng </label><input type="number" id="thang" min="1" max="12" required>
+            <label> Năm </label><input type="number" id="nam" min="1990" max="2021" required>
+        </p>
+
+        <p>
+            <label>  Giới tính: </label>
+            <input type="radio" name="gioitinh" value="1"/> Nam
+            <input type="radio" name="gioitinh" value="0"/> Nữ
+        </p>
+
+        <!-- <p>
+            <label> Số Điện Thoại </label>
+            <input id="sdt" type=/>
+
+        </p> -->
+        <p >
+                <label>Số điện thoại(10 số)</label>
+                <input id="phonenum" type="tel" pattern="^\d{10}$" required >
+                <!-- <div class="input-group-btn">
+                    <button class="btn btn-default checkmobile" type="button">
+                    Kiểm tra
+                    </button>
+                </div> -->
+        </p>
+
+        <p id="so_thich">
+            <label> Sở Thích : </label>
+            <input type="checkbox" id="ds" />Đọc sách
+            <input type="checkbox" id="da_bong" />Đá bóng 
+            <input type="checkbox" id="xem_phim" />Xem phim
+            <input type="checkbox" id="may_va"  />May vá
+            <input type="checkbox" id="nghe"/>Nghe
+            <input type="checkbox" id="khac"/>Khác
+        </p>
+        
+        <hr/>
+
+        <button > Đăng Ký </button>
+    </form>
+
+
+    <script>
+        
+        function kiem_tra(){
+            var firstname = document.querySelector('#ho').value;
+            if (firstname.length==0){
+                alert ("Chưa nhập Họ ");
+                return false;
+            }
+            var Hobbit = document.querySelector('#so_thich').value;
+            if ()
+
+            var lastname = document.querySelector('#ten').value;
+            if (lastname.length==0){
+                alert ("Chưa nhập Tên ");
+                return false;
+            }
+
+            var loai =document.querySelector('#Loai').value;
+            if (loai.length == 0){
+                alert ("Chưa chọn loại sản phẩm");
+                return false;
+            }
+
+            var loai =document.querySelector('#sdt').value;
+           // String = "^\\(d{10}";
+            if (sdt.length == 0){
+                alert ("Chưa nhập số điện thoại");
+            }
+                
+            
+  
+            var price = document.querySelector('#don_gia').value;
+            if (isNaN(price)|| price.length == 0){
+                alert ("Haỹ Nhập Số ");
+                return false;
+            }
+            else {
+                if (price<0){ 
+                alert ("Haỹ Nhập Số Dương ");
+                return false;}  
+            }
+        }
+
+    </script>
+</body>
+</html>
