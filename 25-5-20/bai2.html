@@ -50,20 +50,20 @@
 
         //})
         var buttons = document.querySelectorAll('button');
-        flag = document.onclick;//true la x, false o;
+        flag = true;//true la x, false o;
         buttons.forEach(b=>{
             b.onclick = function(){
-                if( b % flag == 0 ){
+                if(flag){
                     b.innerHTML ='X';
                     b.style.background = 'aqua';
                     b.disabled = true;
-                    flag = !flog;
+                    flag = !flag;
                 }
                 else{
                     b.innerHTML = 'O';
                     b.disabled = false;
                     b.style.background = 'yellow';
-                    flag =!flog;
+                    flag =!flag;
                 }
             }
         });
