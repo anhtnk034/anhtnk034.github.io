@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Buoi 4</title>
+</head>
+<body>
+    <form method="post">
+        <center>
+        <br>Nhap gia tri a:
+        <input type="text" name="a" value="">
+        <br> Nhap gia tri b:
+        <input type="text" name="b" value="">
+        
+        <br>Đáp số:
+        <input type="text" name="x" value="">
+        <input type="button" value="giai" onClick="giai(this.form)">
+        </center>
+    </form>
+    <script language="JavaScript">
+        function giai(form){
+        var x;
+        var a,b;
+        a= parseInt(form.a.value);
+        b= parseInt(form.b.value);
+        
+        if(a==0){
+        if(b==0) alert("phuong trinh vo so nghiem");
+        else alert("phuong trinh vo nghiem");  
+        }
+        else{ 
+        alert("phuong trinh co 1 nghiem");
+        x=-b/a;
+        form.x.value=eval(x); 
+        }
+        }
+    </script>
+    
+
+</body>
+</html>
