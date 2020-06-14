@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title></title>
+  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <style>
+        body{
+            text-align: left;
+            padding: 0px 10px 300px 300px;
+        }
+        #masv{
+            width: 450px;
+            height: 30px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+                
+          }
+        #htsv{
+            width: 450px;
+            height: 30px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #email{
+            width: 450px;
+            height: 30px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #gioitinh{
+            width: 455px;
+            height: 35px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #sothich{
+            width: 455px;
+            height: 35px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #Quocgia{
+            width: 455px;
+            height: 35px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #ghichu{
+            width: 455px;
+            height: 60px;
+            border-radius: 3px;
+            border: 0.5px gray solid;
+        }
+        #dangki{
+            border-radius: 30px;
+            width: 120px;
+            height: 40px;
+            background-color:darkgray;
+            border: 0.5px gray solid;
+        }
+    </style>
+    <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
+    <form onsubmit="return KT()" >
+        <p>
+            <label>Mã sinh viên</label>
+        </p>
+        <p>
+            <input type="text" id="masv" >
+        </p>
+        <p>
+            <label>Họ tên sinh viên</label>
+        </p>
+        <p>
+            <input type="text" id="htsv" >
+        </p>
+        <p>
+            <label>Email</label>
+        </p>
+        <p>
+            <input type="email" id="email"  >
+        </p>
+        <p>
+            <label>Giới tính</label>
+        </p>
+        <p id="gioitinh">
+            <input type="radio" value="Nam" name="gt" > Nam
+            <input type="radio" value="Nữ" name="gt"> Nữ
+        </p>
+        <p>
+            <label> Sở thích </label>
+        </p>
+        <p id="sothich">
+            <input type="checkbox" > Đọc sách
+            <input type="checkbox" > Du lịch
+            <input type="checkbox" > Âm nhạc  
+            <input type="checkbox" > Ẩm thực
+            <input type="checkbox" > Khác
+        </p>
+        <p>
+            <label> Quốc tịch </label>
+        </p>
+        <p id="Quocgia">
+            <input type="" alt="Chọn quốc gia"> Chọn quốc gia
+        </p>
+        <p>
+            <label for="ghichu"> Ghi chú </label>
+        </p>
+        <p>
+            <textarea class="form-control" rows="10" id="ghichu"></textarea>
+        </p>
+        <p>
+            <button type="submit"  id="dangki"> Đăng kí </button>
+        </p>
+       
+        
+    </form>
+    <script>
+        function KT(){
+            var MSV = document.querySelector('#masv').value;
+            if (MSV.length==0){
+                alert ("Chưa nhập Mã sinh viên!!! ");
+                return false;
+                
+            }
+            /*flag = true;
+            if (MSV.length==0){
+                masv.style.background = 'yellow';
+                máv.disabled = true;
+                flag = !flag;
+            }*/
+            /*var Gtinh = document.querySelectorAll('radio');
+            flag = true;
+            Gtinh.forEach(b=>{
+                b.onclick = function(){
+                    if(flag){
+                        alert ('Phải chọn giới tính')
+                        b.style.background = 'yellow';
+                        b.disabled = true;
+                        flag = !flag;
+                    }*/
+
+            var name = document.querySelector('#htsv').value;
+            if (name.length==0){
+                alert ("Chưa nhập Họ tên sinh viên!!! ");
+                return false;
+            }
+            var mail = document.querySelector('#email').value;
+            if (mail.length==0){
+                alert ("Email không được để trống !!! ");
+                return false;
+            }
+            var Comment = document.querySelector('#ghichu').value;
+            if (Comment.length >= 200){
+                alert("Ghi chú phải ít hơn 200 kí tự.")
+                return false;
+            }
+        };
+
+    </script>
+</body>
+</html>
