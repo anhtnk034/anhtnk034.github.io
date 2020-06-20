@@ -1,348 +1,162 @@
-<!doctype html>
+<!DOCTYPE html>
 <html>
-<head>
-<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Thiết Kế Web Nâng Cao</title>
-	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
 
-</head>
+        <title>Exercise of Tran Ngoc Kim Anh </title>
 
-<body>
-	<style>
-			@charset "utf-8";
-			/* CSS Document */
-			
-			
-			
-			* 
-			{
-			  box-sizing: border-box;
-			}
-			
-			.row::after 
-			{
-			  content: "";
-			  clear: both;
-			  display: table;
-			}
-			
-			[class*="col-"] 
-			{
-			  float: left;
-			  padding: 15px;
-			}
-			
-			html 
-			{
-			  font-family: "Lucida Sans", sans-serif;
-			}
-			
-			body
-			{
-				
-				background-size: cover;
-				  border: 1px medium red;
-			}
-			
-			.container
-			
-			{
-				background-color: lightgoldenrodyellow;
-			}
-			
-			header
-			{
-				
-				  border: 1px medium red;
-				height: 180px;
-				background-color: #0099cc;
-				  color: #ffffff;
-				 padding: 15px;
-			}
-			
-			#photo1
-			{
-				border-radius: 150px;
-			}
-			
-			
-			.menu ul 
-			{
-			  list-style-type: none;
-			  margin: 0;
-			  padding: 0;
-			}
-			
-			.menu li 
-			{
-			  padding: 8px;
-			  margin-bottom: 7px;
-			  background-color: #e3f2fd;
-			  color: #ffffff;
-			  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
-			}
-			
-			.menu  li a 
-			{
-			  
-			  color: #3B3838;
-			  text-align: center;
-			  padding: 8px 15px;
-			}
-			
-			
-			.menu li:hover 
-			{
-				  background-color: #9933cc ;
-				 
-			}
-			
-			
-			
-			.col-6 h1
-			{
-				text-align: center;
-			}
-			
-			.content
-			{
-				text-align: center;	
-			}
-			
-			.aside 
-			{
-			  background-color: #33b5e5;
-			  padding: 15px;
-			  color: #ffffff;
-			  text-align: center;
-			  font-size: 14px;
-			  box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);  
-			}
-			
-			.card-body h5
-			{
-				color: black;
-			}
-			
-			.card-body p
-			{
-				color: grey;
-			}
-			
-			
-			
-			
-			.footer 
-			{
-			  background-color: #0099cc;
-			  color: #ffffff;
-			  text-align: center;
-			  font-size: 24px;
-			  padding: 15px;
-			}
-			
-			/* For mobile phones: */
-			[class*="col-"] 
-			{
-			  width: 100%;
-				
-			}
-			
-			@media only screen and (min-width: 600px) 
-			{
-			  /* For tablets: */
-			  .col-s-1 {width: 8.33%;}
-			  .col-s-2 {width: 16.66%;}
-			  .col-s-3 {width: 25%;}
-			  .col-s-4 {width: 33.33%;}
-			  .col-s-5 {width: 41.66%;}
-			  .col-s-6 {width: 50%;}
-			  .col-s-7 {width: 58.33%;}
-			  .col-s-8 {width: 66.66%;}
-			  .col-s-9 {width: 75%;}
-			  .col-s-10 {width: 83.33%;}
-			  .col-s-11 {width: 91.66%;}
-			  .col-s-12 {width: 100%;}
-			}
-			@media only screen and (min-width: 768px) 
-			{
-			  /* For desktop: */
-			  .col-1 {width: 8.33%;}
-			  .col-2 {width: 16.66%;}
-			  .col-3 {width: 25%;}
-			  .col-4 {width: 33.33%;}
-			  .col-5 {width: 41.66%;}
-			  .col-6 {width: 50%;}
-			  .col-7 {width: 58.33%;}
-			  .col-8 {width: 66.66%;}
-			  .col-9 {width: 75%;}
-			  .col-10 {width: 83.33%;}
-			  .col-11 {width: 91.66%;}
-			  .col-12 {width: 100%;}
-			}
-	</style>
-	
-	<div class="container">
-		<header class="row">
-			<div class="photo">
-				<img id="photo1"  width="150px" height="150px">
-			</div>
-			
-			<div class="col align-self-start">
-			  	<h1 > Kim Anh </h1>
-			</div>
-			
-			<div class="col align-self-center">
-			  	<h2>CDK19LW1</h2>
-			</div>
-			
-			<div class="col align-self-end">
-			 	<h3> Giáo Viên Giảng Dạy: <strong>Trần Công Mua</strong>  </h3>
-			</div>	
-			
-		</header>
+        <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+    <!-- Our Custom CSS -->
+    <link rel="stylesheet" href="index.css">
 
-	<div class="row">
-	  	<div class="col-3 col-s-3 menu">
-				<ul>
-					<li><a class="active" href="#home">Home</a></li>
-					<li><a href="#news">News</a></li>
-					<li><a href="#contact">HomeWork</a></li>
-					<li><a href="#about"> About</a></li>
-				</ul>	
-	  	</div>
+    <!-- Font Awesome JS -->
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
+    <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
 
-	  	<div class="col-6 col-s-9">
-			<h1> Bài Tập </h1><br>
-				
-				<div class="content">					
-				  	<h5><a href="21-5/BL21-5.html"> Bài Tập 21/5</a></h5>
-				  	
-				  	
-					
-			  	</div>
-                <div class="content">					
-				  	<h5><a href="21-5/BVN21-5.html"> Bài Tập 21/5 về nhà</a></h5>
-				  	
-				  	
-					
-			  	</div>
-				<br>
-				
-			  	<div class="content">					
-				  	<h5><a href="25-5-20/bai1.html"> Bài Tập Trên Lớp 25/5  bài 1</a></h5>
-				  
-				  	
-					
-			  	</div>
-				<br>
-				
-				<div class="content">					
-				  	<h5><a href="25-5-20/bai2.html">Bài Tập Trên Lớp 25/5 bài 2</a></h5>
-				  	
-				  	
-					
-			    </div>
-				<br>
-				<div class="content">					
-					<h5><a href="28-5-20/bt28t5.html"> 28/5 : Bài Tập</a></h5>
-					
-				  
-				</div>
-				<div class="content">					
-					<h5><a href="28-5-20/bai1lab7.html">28/5: Bài tập về nhà Label7 bai1</a></h5>
-					
-				  
-			  	</div>
-				<br>
-				<div class="content">					
-				<h5><a href="28-5-20/bai2lab7.html">28/5: Bài tập về nhà Label2 bai 2</a></h5>
-				
-				  
-			  	</div>
-				<br>
-				<div class="content">					
-					<h5><a href="28-5-20/bai3lab7.html">28/5: Bài tập về nhà Label2 bai 3</a></h5>			
-				</div>
-				<br>
-				<div class="content">					
-					<h5><a href="4-6/bai1.html">4/6: Bài trên lớp</a></h5>			
-				</div>
-				<br>
-			
-	  	</div>	
+    </head>
+    <body>
+      <div class="wrapper">
+        <!-- Sidebar  -->
+        <nav id="sidebar">
+            <div class="sidebar-header">
+                <h3>Bootstrap Sidebar</h3>
+                <strong>BS</strong>
+            </div>
 
-	  	<div class="col-3 col-s-12">
-			<div class="aside"  style="width: 17rem;">
-		  		<div class="card" style="width: 15rem;">
-				  	<div class="card-body">
-						<h5 class="card-title">Đánh giá trang web</h5>
-						<h6 class="card-subtitle mb-2 text-muted">Bạn có thấy hài lòng không?</h6>
-						<p class="card-text">Hãy cho tôi được biết nhé. Cám ơn sự góp ý của bạn</p>
-						<a href="#" class="card-link">Hài lòng <i class='far fa-smile'></i></a>
-						<a href="#" class="card-link">Không hài lòng<i class='far fa-smile'></i></a>
-				  	</div>
-				</div>
-			</div>
-	  	</div>
-	</div>
+            <ul class="list-unstyled components">
+                <li class="active">
+                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-home"></i>
+                        Home
+                    </a>
+                    <ul class="collapse list-unstyled" id="homeSubmenu">
+                        <li>
+                            <a href="#">Home 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Home 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-briefcase"></i>
+                        About
+                    </a>
+                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
+                        <i class="fas fa-copy"></i>
+                        Pages
+                    </a>
+                    <ul class="collapse list-unstyled" id="pageSubmenu">
+                        <li>
+                            <a href="#">Page 1</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 2</a>
+                        </li>
+                        <li>
+                            <a href="#">Page 3</a>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-image"></i>
+                        Portfolio
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-question"></i>
+                        FAQ
+                    </a>
+                </li>
+                <li>
+                    <a href="#">
+                        <i class="fas fa-paper-plane"></i>
+                        Contact
+                    </a>
+                </li>
+            </ul>
 
-	<div class="footer">
-	  	<!-- Footer -->
-		<!-- Footer -->
-		<footer class="page-footer font-small special-color-dark pt-4">
+            <ul class="list-unstyled CTAs">
+                <li>
+                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
+                </li>
+                <li>
+                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
+                </li>
+            </ul>
+        </nav>
 
-		  <!-- Footer Elements -->
-		  <div class="container">
+        <!-- Page Content  -->
+        <div id="content">
 
-			<!--Grid row-->
-			<div class="row">
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="container-fluid">
 
-			  <!--Grid column-->
-			  <div class="col-md-6 mb-4">
+                    <button type="button" id="sidebarCollapse" class="btn btn-info">
+                        <i class="fas fa-align-left"></i>
+                        <span>Toggle Sidebar</span>
+                    </button>
+                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <i class="fas fa-align-justify"></i>
+                    </button>
 
-				<!-- Form -->
-				<form class="form-inline">
-				  <input class="form-control form-control-sm mr-3 w-75" type="text" placeholder="Search"
-					aria-label="Search">
-				  <i class="fas fa-search" aria-hidden="true"></i>
-				</form>
-				<!-- Form -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto">
+                            <li class="nav-item active">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Page</a>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </nav>
 
-			  </div>
-			  <!--Grid column-->
+                
+            </div>
+        </div>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 
-			  <!--Grid column-->
-			  <div class="col-md-6 mb-4">
+        <!-- <script type="text/javascript">
+            $(document).ready(function () {
+                $("#sidebar").mCustomScrollbar({
+                    theme: "minimal"
+                });
 
-				<form class="input-group">
-				  <input type="text" class="form-control form-control-sm" placeholder="Your email"
-					aria-label="Your email" aria-describedby="basic-addon2">
-				  <div class="input-group-append">
-					<button class="btn btn-sm btn-outline-white my-0" type="button" style="color: white">Sign up</button>
-				  </div>
-				</form>
-
-			  </div>
-			  <!--Grid column-->
-
-			</div>
-			<!--Grid row-->
-
-		  </div>
-		  <!-- Footer Elements -->
-
-		</footer>
-		<!-- Footer -->
-	</div>
-		
-	</div>
-	
-	<script src='https://kit.fontawesome.com/a076d05399.js'></script>
-	<script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
-	<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
-	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-	
-</body>
+                $('#sidebarCollapse').on('click', function () {
+                    $('#sidebar, #content').toggleClass('active');
+                    $('.collapse.in').toggleClass('in');
+                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
+                });
+            });
+        </script> -->
+        <script type="text/javascript">
+          $(document).ready(function () {
+              $('#sidebarCollapse').on('click', function () {
+                  $('#sidebar').toggleClass('active');
+              });
+          });
+      </script>
+    </body>
 </html>

@@ -3,7 +3,11 @@
 <head>
   <meta charset="UTF-8">
   <title></title>
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+  <link href="" rel='stylesheet' type='text/css'>
 </head>
 <body>
     <style>
@@ -17,7 +21,7 @@
             border-radius: 3px;
             border: 0.5px gray solid;
                 
-          }
+            }
         #htsv{
             width: 450px;
             height: 30px;
@@ -62,6 +66,7 @@
             border: 0.5px gray solid;
         }
     </style>
+
     <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
     <form onsubmit="return KT()" >
         <p>
@@ -85,10 +90,28 @@
         <p>
             <label>Giới tính</label>
         </p>
-        <p id="gioitinh">
-            <input type="radio" value="Nam" name="gt" > Nam
-            <input type="radio" value="Nữ" name="gt"> Nữ
-        </p>
+        <p>
+            <div class="form-group" id="gioitinh">
+                <label for="">Giới tính</label> <br>
+                <div class="border rounded bg-white py-2">
+                    <div class="form-check form-check-inline ml-2">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
+                        <label class="form-check-label" for="exampleRadios1">
+                            Nam
+                        </label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
+                        <label class="form-check-label" for="exampleRadios2">
+                            Nữ
+                        </label>
+                    </div>
+                </div>
+            </div>
+            <!-- <input type="radio" value="Nam" name="gt" > Nam
+            <input type="radio" value="Nữ" name="gt"> Nữ -->
+        </p> 
+        
         <p>
             <label> Sở thích </label>
         </p>
@@ -102,8 +125,25 @@
         <p>
             <label> Quốc tịch </label>
         </p>
-        <p id="Quocgia">
-            <input type="" alt="Chọn quốc gia"> Chọn quốc gia
+        <p >
+            <!-- <div class="dropdown" >
+                <button class="btn btn-default dropdown-toggle" type="button" id="Quocgia" data-toggle="dropdown">Chọn Quốc gia
+                <span class="caret"></span></button>
+                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Việt Nam</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lào</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campuchia</a></li>
+                  <li role="presentation" class="divider"></li> -->
+                  <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thái Lan</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Philippin</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indonexia</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Singapore</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Malaysia</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mianma</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đông Ti Mo</a></li>
+                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bru-nây</a></li>
+                </ul>
+              </div> -->
         </p>
         <p>
             <label for="ghichu"> Ghi chú </label>
