@@ -18,145 +18,267 @@
 
     </head>
     <body>
-      <div class="wrapper">
-        <!-- Sidebar  -->
-        <nav id="sidebar">
-            <div class="sidebar-header">
-                <h3>Bootstrap Sidebar</h3>
-                <strong>BS</strong>
-            </div>
-
-            <ul class="list-unstyled components">
-                <li class="active">
-                    <a href="#homeSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-home"></i>
-                        Home
-                    </a>
-                    <ul class="collapse list-unstyled" id="homeSubmenu">
-                        <li>
-                            <a href="#">Home 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Home 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-briefcase"></i>
-                        About
-                    </a>
-                    <a href="#pageSubmenu" data-toggle="collapse" aria-expanded="false" class="dropdown-toggle">
-                        <i class="fas fa-copy"></i>
-                        Pages
-                    </a>
-                    <ul class="collapse list-unstyled" id="pageSubmenu">
-                        <li>
-                            <a href="#">Page 1</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 2</a>
-                        </li>
-                        <li>
-                            <a href="#">Page 3</a>
-                        </li>
-                    </ul>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-image"></i>
-                        Portfolio
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-question"></i>
-                        FAQ
-                    </a>
-                </li>
-                <li>
-                    <a href="#">
-                        <i class="fas fa-paper-plane"></i>
-                        Contact
-                    </a>
-                </li>
-            </ul>
-
-            <ul class="list-unstyled CTAs">
-                <li>
-                    <a href="https://bootstrapious.com/tutorial/files/sidebar.zip" class="download">Download source</a>
-                </li>
-                <li>
-                    <a href="https://bootstrapious.com/p/bootstrap-sidebar" class="article">Back to article</a>
-                </li>
-            </ul>
-        </nav>
-
+    <header>
+        <nav class="navbar navbar-expand-sm bg-light navbar-light navbar-inverse navbar-fixed-top">
+                <ul class="navbar-nav">
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#homeSubmenu" data-toggle="dropdown" aria-expanded="false">
+                            <i class="fas fa-home"></i>
+                            Home
+                        </a>
+                        <ul class="dropdown-menu list-unstyled" id="homeSubmenu">
+                            <li>
+                                <a href="fileHTML/bai1.html"><i class="fas fa-file"></i> Exercise 1</a>
+                            </li>
+                            <li>
+                                <a href="fileHTML/bai2.html"><i class="fas fa-file"></i> Exercise  2</a>
+                            </li>
+                            <li>
+                                <a href="fileHTML/bai3.html"><i class="fas fa-file"></i> Exercise  3</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">
+                            <i class="fas fa-briefcase"></i>
+                            About
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="https://javascript30.com/">
+                            <i class="fas fa-copy"></i>
+                            JS
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="https://www.google.com/">
+                            <i class="fas fa-image"></i>
+                            Foto
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link " href="index.html">
+                            <i class="fas fa-question"></i>
+                            Layout
+                        </a>
+                    </li>
+                </ul>
+                <form class="form-inline" action="/action_page.php">
+                    <input class="form-control mr-sm-2" type="text" placeholder="Search">
+                    <button class="btn btn-success" type="submit">Search</button>
+                </form>
+                <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                    <i class="fas fa-align-left"></i>
+                    <span>TNK</span>
+                </button>
+                <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <i class="fas fa-align-justify"></i>
+                </button> -->
+            </nav>
+    </header>
+    
+    <div class="wrapper">
         <!-- Page Content  -->
         <div id="content">
-
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container-fluid">
-
-                    <button type="button" id="sidebarCollapse" class="btn btn-info">
-                        <i class="fas fa-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                    </button>
-                    <button class="btn btn-dark d-inline-block d-lg-none ml-auto" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <i class="fas fa-align-justify"></i>
-                    </button>
-
                     <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="nav navbar-nav ml-auto">
-                            <li class="nav-item active">
-                                <a class="nav-link" href="#">Page</a>
+                        <div >
+                            <h3> 
+                                <img src="hinhanh/a1.jpg" class="rounded-circle" alt="Cinque Terre" width="60" height="46">  Anh TNK
+                            </h3>
+                        </div> 
+                    </div>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="nav navbar-nav ml-auto ">
+                            <li class="nav-item ">
+                                <a class="nav-link" href="fileHTML/bai1.html"><i class="fas fa-file"></i> Exercise 1</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="fileHTML/bai2.html"><i class="fas fa-file"></i> Exercise 2</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
+                                <a class="nav-link" href="fileHTML/bai3.html"><i class="fas fa-file"></i> Exercise 3</a>
                             </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">Page</a>
-                            </li>
+                            
                         </ul>
                     </div>
                 </div>
             </nav>
-
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+                <div class="card  col-sm-4" style="width:320px">
+                    <img class="card-img-top" src="anhdep.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Exercise 1</h4>
+                        <p class="card-text">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="card   col-sm-4" style="width:320px">
+                    <img class="card-img-top" src="anhdep.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Exercise 1</h4>
+                        <p class="card-text">
+                            
+                        </p>
+                    </div>
+                </div>
+                <div class="card col-sm-4" style="width:320px">
+                    <img class="card-img-top" src="anhdep.jpg" alt="Card image" style="width:100%">
+                    <div class="card-body">
+                        <h4 class="card-title">Exercise 1</h4>
+                        <p class="card-text">
+                            
+                        </p>
+                    </div>
+                </div>
+                <br>
                 
+            </nav>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>The following example shows a simple accordion by extending the card component.
+
+                Note: Use the data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+                </p>
+            </div>
+            <div>
+                <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+                <p>The following example shows a simple accordion by extending the card component.
+
+                Note: Use the data-parent attribute to make sure that all collapsible elements under the specified parent will be closed when one of the collapsible item is shown.
+                </p>
             </div>
         </div>
+    </div>
+   
+    <!-- Footer -->
+<footer class="page-footer font-small mdb-color lighten-3 pt-4">
+
+        <!-- Footer Elements -->
+        <div class="container">
+      
+          <!--Grid row-->
+          <div class="row">
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-12 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(73).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(78).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(79).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-12 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(81).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(82).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+            <!--Grid column-->
+            <div class="col-lg-2 col-md-6 mb-4">
+      
+              <!--Image-->
+              <div class="view overlay z-depth-1-half">
+                <img src="https://mdbootstrap.com/img/Photos/Horizontal/Nature/4-col/img%20(84).jpg" class="img-fluid"
+                  alt="">
+                <a href="">
+                  <div class="mask rgba-white-light"></div>
+                </a>
+              </div>
+      
+            </div>
+            <!--Grid column-->
+      
+          </div>
+          <!--Grid row-->
+      
+        </div>
+        <!-- Footer Elements -->
+      
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">© 2020 Copyright:
+          <a href="https://www.w3schools.com/"> anhkim034.com</a>
+        </div>
+        <!-- Copyright -->
+      
+      </footer>
+      <!-- Footer -->
+   
         <!-- jQuery CDN - Slim version (=without AJAX) -->
     <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Popper.JS -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-
         <!-- <script type="text/javascript">
-            $(document).ready(function () {
-                $("#sidebar").mCustomScrollbar({
-                    theme: "minimal"
-                });
-
-                $('#sidebarCollapse').on('click', function () {
-                    $('#sidebar, #content').toggleClass('active');
-                    $('.collapse.in').toggleClass('in');
-                    $('a[aria-expanded=true]').attr('aria-expanded', 'false');
-                });
-            });
-        </script> -->
-        <script type="text/javascript">
           $(document).ready(function () {
               $('#sidebarCollapse').on('click', function () {
                   $('#sidebar').toggleClass('active');
               });
           });
-      </script>
+      </script> -->
     </body>
 </html>

@@ -5,9 +5,16 @@
 @import "https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700";
 body {
     font-family: 'Poppins', sans-serif;
-    background: #fafafa;
+    background: lightblue;
+}
+header{
+    flex: content;
+    background: lightblue;
 }
 
+form{
+    padding-left: 500px ;
+}
 p {
     font-family: 'Poppins', sans-serif;
     font-size: 1.1em;
@@ -63,7 +70,7 @@ span {
 #sidebar {
     min-width: 250px;
     max-width: 250px;
-    background: #7386D5;
+    background: rgb(255, 255, 255);
     color: #fff;
     transition: all 0.3s;
 }
@@ -104,29 +111,29 @@ span {
     padding: 10px !important;
 }
 
-#sidebar.active .dropdown-toggle::after {
+/* #sidebar.active .dropdown-toggle::after {
     top: auto;
     bottom: 10px;
     right: 50%;
     -webkit-transform: translateX(50%);
     -ms-transform: translateX(50%);
     transform: translateX(50%);
-}
+} */
 
-#sidebar .sidebar-header {
+/* #sidebar .sidebar-header {
     padding: 20px;
-    background: #6d7fcc;
-}
+    background: #2b6299;
+} */
 
-#sidebar .sidebar-header strong {
+/* #sidebar .sidebar-header strong {
     display: none;
-    font-size: 1.8em;
-}
+    font-size: 10.8em;
+} */
 
-#sidebar ul.components {
-    padding: 20px 0;
-    border-bottom: 1px solid #47748b;
-}
+/* #sidebar ul.components {
+    padding: 10px 0;
+    border-bottom: 1px solid #943d3d;
+} */
 
 #sidebar ul li a {
     padding: 10px;
@@ -134,19 +141,19 @@ span {
     display: block;
 }
 
-#sidebar ul li a:hover {
-    color: #7386D5;
+/* #sidebar ul li a:hover {
+    color: rgb(10, 34, 121);
     background: #fff;
-}
+} */
 
-#sidebar ul li a i {
-    margin-right: 10px;
-}
+/* #sidebar ul li a i {
+    margin-right: 200px;
+} */
 
 #sidebar ul li.active>a,
 a[aria-expanded="true"] {
-    color: #fff;
-    background: #6d7fcc;
+    color: rgb(223, 239, 245);
+    background: rgb(219, 229, 233);
 }
 
 a[data-toggle="collapse"] {
@@ -164,7 +171,7 @@ a[data-toggle="collapse"] {
 ul ul a {
     font-size: 0.9em !important;
     padding-left: 30px !important;
-    background: #6d7fcc;
+    background: #ffffff;
 }
 
 ul.CTAs {
@@ -179,14 +186,10 @@ ul.CTAs a {
     margin-bottom: 5px;
 }
 
-a.download {
-    background: #fff;
-    color: #7386D5;
-}
 
 a.article,
 a.article:hover {
-    background: #6d7fcc !important;
+    background: #ffffff !important;
     color: #fff !important;
 }
 
@@ -252,4 +255,10 @@ a.article:hover {
     #sidebarCollapse span {
         display: none;
     }
+}
+#Center{
+    text-align: center;
+}
+footer{
+    background-color:  rgb(176, 187, 231);
 }
