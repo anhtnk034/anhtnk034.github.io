@@ -14,6 +14,7 @@
         body{
             text-align: left;
             padding: 0px 10px 300px 300px;
+            background-color: aquamarine;
         }
         #masv{
             width: 450px;
@@ -115,35 +116,59 @@
         <p>
             <label> Sở thích </label>
         </p>
-        <p id="sothich">
+        <!-- <p id="sothich">
             <input type="checkbox" > Đọc sách
             <input type="checkbox" > Du lịch
             <input type="checkbox" > Âm nhạc  
             <input type="checkbox" > Ẩm thực
             <input type="checkbox" > Khác
-        </p>
+        </p> -->
+        <p class="form-group" id="sothich">
+                <div class="border rounded bg-white py-2">
+                  <div class="form-check form-check-inline ml-2">
+                    <input class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
+                    <label class="form-check-label" for="inlineCheckbox1">Đọc sách</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+                    <label class="form-check-label" for="inlineCheckbox2">Du lịch</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+                    <label class="form-check-label" for="inlineCheckbox3">Âm nhạc</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+                    <label class="form-check-label" for="inlineCheckbox3">Ẩm thực</label>
+                  </div>
+                  <div class="form-check form-check-inline">
+                    <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+                    <label class="form-check-label" for="inlineCheckbox3">Khác</label>
+                  </div>
+                </div>
+              </p>
         <p>
             <label> Quốc tịch </label>
         </p>
         <p >
-            <!-- <div class="dropdown" >
-                <button class="btn btn-default dropdown-toggle" type="button" id="Quocgia" data-toggle="dropdown">Chọn Quốc gia
-                <span class="caret"></span></button>
-                <ul class="dropdown-menu" role="menu" aria-labelledby="menu1">
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Việt Nam</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Lào</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Campuchia</a></li>
-                  <li role="presentation" class="divider"></li> -->
-                  <!-- <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Thái Lan</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Philippin</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Indonexia</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Singapore</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Malaysia</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Mianma</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Đông Ti Mo</a></li>
-                  <li role="presentation"><a role="menuitem" tabindex="-1" href="#">Bru-nây</a></li>
-                </ul>
-              </div> -->
+            <div class="form-group">
+                <select name="" id="Quocgia" class="form-control">
+                    <option class="ative">Chọn quốc tịch</option>
+                    <li role="presentation" class="divider"></li>
+                    <option>Việt Nam</option>
+                    <option>Lào</option>
+                    <option>Campuchia</option>
+                    <option>Thái Lan</option>
+                    <option>Đông Ti Mo</option>
+                    <option>Philippin</option>
+                    <option>Bry-nây</option>
+                    <option>Indonexia</option>
+                    <option>Malaysia</option>
+                    <option>Mianma</option>
+                    <option>Singapur</option>
+                    
+                </select>
+            </div>
         </p>
         <p>
             <label for="ghichu"> Ghi chú </label>
@@ -200,5 +225,11 @@
         };
 
     </script>
+    <!-- jQuery CDN - Slim version (=without AJAX) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <!-- Popper.JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <!-- Bootstrap JS -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
 </body>
 </html>
