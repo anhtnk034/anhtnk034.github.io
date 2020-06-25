@@ -1,0 +1,63 @@
+body{
+    background-color: rgb(200, 235, 241);
+}
+h2{
+    text-align: center;
+    color: red;
+    font-size: 30px;
+}
+header{
+    position: relative;/**/
+    width: 60%;
+    height: auto;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;/**/
+    padding: 20px;
+
+}
+header>img{
+    position: relative;
+
+}
+img{
+    border-radius: 30px;
+    
+}
+img {
+    filter: brightness(0.92) contrast(2.8);
+  }
+   
+  figure:before {
+    z-index: 2;
+    mix-blend-mode: multiply;
+    box-shadow: 0 0 100px rgba(100, 150, 200, 1) inset, 0 0 300px rgba(100, 150, 200, 1) inset;
+  }
+   
+  figure:after {
+    z-index: 5;
+    mix-blend-mode: difference;
+    background: rgba(0, 0, 255, 0.3);
+  }
+button{
+    background-color: palevioletred;
+    border: 1px solid grey;
+    border-radius: 45px;
+    width: 70px;
+    height: 45px;
+    position: absolute;
+}
+.prev{
+    left: 2.5%;
+    margin-top: -300px;
+}
+.next{
+    right: 3.5%;
+    margin-top: -300px;
+}
+.picture{
+    margin-top: -30px;
+    margin-left: 310px;
+    color: aliceblue;
+    font-size: 20px;
+}

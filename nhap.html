@@ -1,302 +1,159 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <title>A</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
-  <link href='https://fonts.googleapis.com/css?family=Amatic+SC' rel='stylesheet' type='text/css'>
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="css/bootstrap.min.css">
-  <link rel="stylesheet" href="css/jquery-ui.min.css">
-  
-</head>
-<body>
-        <div id="content">
-                <nav class="navbar navbar-default">
-                  <div class="container-fluid">
-          
-                    <div class="navbar-header">
-                      <button type="button" id="sidebarCollapse" class="btn btn-info navbar-btn">
-                        <i class="glyphicon glyphicon-align-left"></i>
-                        <span>Toggle Sidebar</span>
-                      </button>
-                    </div>
-          
-                    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                      <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                        <li><a href="#">Page</a></li>
-                      </ul>
-                    </div>
-                  </div>
-                </nav>
-          
-                <!-- main -->
-                <div class="container">
-                  <h1 align="center">Assignment Web</h1>
-                </div>
-          
-                <!-- card 1 -->
-                <div class="card my-5 ">
-                  <div class="card-header text-uppercase text-center">
-                    <h3>
-                      đăng kí thành viên
-                    </h3>
-                  </div>
-                  <div class="card-body">
-                    <form action="" class="w-50">            
-                      <div class="form-group">
-                        <label for="">Mã sinh Viên : </label>
-                        <input type="text" class="form-control" id="txtMaSV">
-                    </div>
-                    <div class="form-group">
-                        <label for="">Tên sinh Viên : </label>
-                        <input type="text" class="form-control" id="txtTenSV">
-                    </div>
-                    <div class="form-group">
-                      <label for="">Email</label>
-                      <input type="email" class="form-control" name="mail" id="mail" aria-describedby="emailHelpId" placeholder="">
-                    </div>
-          
-          
-                    <div class="form-group">
-                      <label for="">Giới tính</label> <br>
-                      <div class="border rounded bg-white py-2">
-                        <div class="form-check form-check-inline ml-2">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-                          <label class="form-check-label" for="exampleRadios1">
-                            Nam
-                          </label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                          <label class="form-check-label" for="exampleRadios2">
-                            Nữ
-                          </label>
-                        </div>
-                      </div>
-                    </div>
-          
-                    <div class="form-group">
-                      <label for="">Sở thích</label> <br>
-                      <div class="border rounded bg-white py-2">
-                        <div class="form-check form-check-inline ml-2">
-                          <input class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
-                          <label class="form-check-label" for="inlineCheckbox1">Đọc sách</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                          <label class="form-check-label" for="inlineCheckbox2">Du lịch</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                          <label class="form-check-label" for="inlineCheckbox3">Âm nhạc</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                          <label class="form-check-label" for="inlineCheckbox3">Ẩm thực</label>
-                        </div>
-                        <div class="form-check form-check-inline">
-                          <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                          <label class="form-check-label" for="inlineCheckbox3">Khác</label>
-                        </div>
-                      </div>
-                    </div>
-          
-          
-                    <div class="form-group">
-                        <label for="">Quốc tịch :</label>
-                        <select name="" id="quocTich" class="form-control">
-                          <option>Chọn quốc tịch</option>
-                          <option>Việt Nam</option>
-                          <option>Đông Lào</option>
-                          <option>Đại Việt</option>
-                        </select>
-                    </div>
-          
-                    <div class="form-group">
-                      <label for="exampleFormControlTextarea1">Ghi chú</label>
-                      <textarea class="form-control" id="ghiChu" rows="5"></textarea>
-                    </div>
-                    <div class="form-group text-center">
-                      <button id="dangKy" type="button" class="btn btn-primary">Đăng Ký</button>
-                    </div>
-                    </form>
-                    <a href="#" class="btn btn-primary">Go somewhere</a>
-                  </div>
-                  <div class="card-footer text-muted">
-                    2 days ago
-                  </div>
-                </div>
-                <!-- //card 1 -->
-          
-                <!-- card 2  -->
-                <div class="card text-center my-5">
-                  <div class="card-header text-uppercase text-center">
-                    <h3>bán hàng</h3>
-                  </div>
-                  <div class="card-body">
-                    ;
-                          <table class="table table-bordered">
-                      <thead>
-                        <tr>
-                          <th scope="col">
-                            <!-- <input type="checkbox" name="" id=""> -->
-                          </th>
-                          <th scope="col">Hàng hóa</th>
-                          <th scope="col">Đơn giá</th>
-                          <th scope="col">Số lượng</th>
-                          <th scope="col">Thành tiền</th>
-                        </tr>
-                      </thead>
-                      <tbody>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Iphone 9</td>
-                          <td class="donGia">700</td>
-                          <td><input type="text" name="" id="" value="0" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Samsung</td>
-                          <td class="donGia">400</td>
-                          <td><input type="text" name="" id="" value="1" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Nokia</td><td class="donGia">100</td>
-                          <td><input type="text" name="" id="" value="0" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Sony</td>
-                          <td class="donGia">450</td>
-                          <td><input type="text" name="" id="" value="0" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Motorola</td>
-                          <td class="donGia">180</td>
-                          <td><input type="text" name="" id="" value="0" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Oppo</td>
-                          <td class="donGia">600</td>
-                          <td><input type="text" name="" id="" value="0" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row">
-                            <input type="checkbox" name="" id="">
-                          </td>
-                          <td>Bphone</td>
-                          <td class="donGia">90</td>
-                          <td><input type="text" name="" id="" value="2" disabled=""></td>
-                          <td class="thanhTien">0</td>
-                        </tr>
-                        <tr>
-                          <td scope="row" colspan="4" class="font-weight-bold">Tổng</td>
-                          <td class="tong">0</td>
-                        </tr>
-                      </tbody>
-                    </table>
-                  </div>
-                  <div class="card-footer text-muted">
-                    2 days ago
-                  </div>
-                </div>
-                <!-- card 2  -->
-          
-                <!-- //main -->
-              </div>
-            </div>
-    <div class="form-group">
-        <label for="">Quốc tịch :</label>
-        <select name="" id="quocTich" class="form-control">
-            <option>Chọn quốc tịch</option>
-            <option>Việt Nam</option>
-            <option>Đông Lào</option>
-            <option>Đại Việt</option>
-        </select>
+<div class="form-group " id="gioitinh"><!-- 2 -->
+  <div class="form-group  border rounded p-2">
+    <div class="custom-control custom-radio custom-control-inline ">
+      <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input" checked>
+      <label class="custom-control-label  " for="customRadioInline1">Nam</label>
+    </div><!-- p-2 -->
+    <div class="custom-control custom-radio custom-control-inline">
+      <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
+      <label class="custom-control-label" for="customRadioInline2">Nữ</label>
+    </div><!-- -inline -->
+  </div>
+</div>
+<span class="messError" data-name="customRadioInline1"></span>
+
+<div class="form-group" id="sothich">
+    <div class="border rounded bg-white py-2">
+      <div class="form-check form-check-inline ml-2">
+        <input class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
+        <label class="form-check-label" for="inlineCheckbox1">Đọc sách</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
+        <label class="form-check-label" for="inlineCheckbox2">Du lịch</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
+        <label class="form-check-label" for="inlineCheckbox3">Âm nhạc</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
+        <label class="form-check-label" for="inlineCheckbox3">Ẩm thực</label>
+      </div>
+      <div class="form-check form-check-inline">
+        <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
+        <label class="form-check-label" for="inlineCheckbox3">Khác</label>
+      </div>
     </div>
-    <div class="form-group">
-        <label for="">Sở thích</label> <br>
-        <div class="border rounded bg-white py-2">
-            <div class="form-check form-check-inline ml-2">
-                <input class="form-check-input " type="checkbox" id="inlineCheckbox1" value="option1">
-                <label class="form-check-label" for="inlineCheckbox1">Đọc sách</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox2" value="option2">
-                <label class="form-check-label" for="inlineCheckbox2">Du lịch</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox3" value="option3">
-                <label class="form-check-label" for="inlineCheckbox3">Âm nhạc</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox4" value="option4">
-                <label class="form-check-label" for="inlineCheckbox3">Ẩm thực</label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="checkbox" id="inlineCheckbox5" value="option5">
-                <label class="form-check-label" for="inlineCheckbox3">Khác</label>
-            </div>
-        </div>
+</div>
+<div id="other-checked" style="display: none;">
+        <label>Sở thích khác của bạn là gì:</label>
+        <input type="text" name="hobby" pattern="[a-zA-Z][^0-9]{1,}" autocomplete="off">
     </div>
-    <div class="form-group">
-        <label for="">Giới tính</label> <br>
-        <div class="border rounded bg-white py-2">
-            <div class="form-check form-check-inline ml-2">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios1" value="option1" checked="">
-                <label class="form-check-label" for="exampleRadios1">
-                    Nam
-                </label>
-            </div>
-            <div class="form-check form-check-inline">
-                <input class="form-check-input" type="radio" name="exampleRadios" id="exampleRadios2" value="option2">
-                <label class="form-check-label" for="exampleRadios2">
-                    Nữ
-                </label>
-            </div>
-        </div>
-    </div>
+    <span class="messError" data-name="hobby"></span>
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+      <meta charset="UTF-8">
+      <title>Exercise 2</title>
     
-    </div>
-    <script type="text/javascript">
-		$(document).ready(function () {
-			$('#sidebarCollapse').on('click', function () {
-				$('#sidebar').toggleClass('active');
-			});
-		});
-	</script>
-    <script src="js/datepicker.js"></script>
-    <script src="https://code.jquery.com/ui/1.12.1/jquery-ui.js"></script>
-    <script type="text/javascript" src="js/bootstrap.min.js"></script>
-    <script type="text/javascript" src="js/popper.min.js"></script>
-    <script type="text/javascript" src="js/jquery.easing.min.js"></script>
-</body>
-</html>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link href="CSS/bai2.css" rel='stylesheet' type='text/css'>
+    </head>
+    <body>
+    
+        <h1>ĐĂNG KÍ THÀNH VIÊN</h1>
+        <form onsubmit="return KT()" >
+            <div id="form">
+                <p>
+                    <label>Mã sinh viên</label>
+                </p>
+                <p>
+                    <input type="text" id="masv" >
+                </p>
+                <p>
+                    <label>Họ tên sinh viên</label>
+                </p>
+                <p>
+                    <input type="text" id="htsv" >
+                </p>
+                <p>
+                    <label>Email</label>
+                </p>
+                <p>
+                    <input type="email" id="email"  >
+                </p>
+                
+                <p>
+                    <label for="sex">Giới tính</label>
+                    <div id="sex" name="sex">
+                        <input type="radio" name="sex" id="male" autocomplete="off">
+                        <label for="male">Nam</label>
+                        <input type="radio" name="sex" id="female" autocomplete="off">
+                        <label for="female">Nữ</label>
+                    </div>
+                    <span class="messError" data-name="sex"></span>
+                </p> 
+        
+                <p>
+                    <label for="hobbies" name="hobby">Sở thích</label>
+                    <div id="hobbies">
+                        <input type="checkbox" name="hobby" id="book" autocomplete="off">
+                        <label for="book">Đọc sách</label>
+        
+                        <input type="checkbox" name="hobby" id="travel" autocomplete="off">
+                        <label for="travel">Du lịch</label>
+        
+                        <input type="checkbox" name="hobby" id="music" autocomplete="off">
+                        <label for="music">Nghe nhạc</label>
+        
+                        <input type="checkbox" name="hobby" id="food" autocomplete="off">
+                        <label for="food">Ẩm thực</label>
+        
+                        <input type="checkbox" name="hobby" id="other-hobby" autocomplete="off">
+                        <label for="other-hobby">Khác</label>
+                    </div>
+        
+                    <div id="other-checked" style="display: none;">
+                        <label>Sở thích khác của bạn là gì:</label>
+                        <input type="text" name="hobby" pattern="[a-zA-Z][^0-9]{1,}" autocomplete="off">
+                    </div>
+                    <span class="messError" data-name="hobby"></span> 
+                </p>
+                <p>
+                        <label> Quốc tịch </label>
+                    </p>
+                    <p >
+                        <div class="form-group" >
+                            <select name="" id="Quocgia" class="form-control">
+                                <option class="ative">Chọn quốc tịch</option>
+                                <li role="presentation" class="divider"></li>
+                                <option>Việt Nam</option>
+                                <option>Lào</option>
+                                <option>Campuchia</option>
+                                <option>Thái Lan</option>
+                                <option>Đông Ti Mo</option>
+                                <option>Philippin</option>
+                                <option>Bry-nây</option>
+                                <option>Indonexia</option>
+                                <option>Malaysia</option>
+                                <option>Mianma</option>
+                                <option>Singapur</option>
+                                
+                            </select>
+                        </div>
+                    </p>
+                    <p>
+                        <label for="ghichu"> Ghi chú </label>
+                    </p>
+                    <p>
+                        <textarea class="form-control" rows="20" id="ghichu"></textarea>
+                    </p>
+                    <p>
+                        <button type="submit"  id="dangki"> Đăng kí </button>
+                    </p>
+            </div>
+            
+           
+            
+           
+            
+        </form>
+        <script src="JS/bai2.js"></script>
+        <!-- jQuery CDN - Slim version (=without AJAX) -->
+        <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+    </body>
+    </html>

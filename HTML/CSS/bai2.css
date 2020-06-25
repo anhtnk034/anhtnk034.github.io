@@ -1,0 +1,56 @@
+#form{
+    box-sizing: border-box;/*box-sizing:border-box;bao gồm cả 2 phần : đệm và chiều cao để tất cả table có cùng kích thứơc*/
+    position: relative;/**/
+    width: 50%;
+    height: 1050px;
+    margin: 0 auto;
+    background-size: cover;
+    background-position: center;/**/
+  }
+  form>p{
+      font-size: 20px;
+  }
+  form{
+    width: 95%;
+    height: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);/*vị trí so với form*/
+    background-color: rgba(224, 149, 149, 0.7);
+    border-radius: 10px;
+    position: absolute;
+    padding: 15px;
+  }
+  form>h1{text-align: center;}/*Vị trí */
+  input[type=text], select, textarea,/* những thẻ input có type="text " được định dạng theo select và textarea*/
+  #gioitinh, #hobbies{
+    width: 95%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px rgb(168, 150, 150) solid;
+    background-color: rgba(231, 228, 228, 0.7);
+  }
+  input[type=text]:focus, select:focus, textarea:focus{
+    outline: none;
+  }
+  #gioitinh>label, #hobbies>label{
+    padding-right: 20px;
+  }
+  #subscribe{
+    margin-top: 10px;
+    width: 40%;
+    float: left;
+    height: 50px;
+    opacity: 1;/*độ rõ nét*/
+    border: none;
+    cursor: pointer;/*con trỏ chuột đổi thành bàn tay*/
+    background-color: rgb(84, 87, 231);
+    color: white;
+    border-radius: 25px;
+  }
+  
+  .Error{
+    display: block;
+    margin-bottom: 20px;
+    color: red;
+  }

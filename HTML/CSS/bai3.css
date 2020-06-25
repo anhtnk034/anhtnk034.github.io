@@ -1,0 +1,68 @@
+body{
+  background-color: rgb(46, 26, 228);
+}/* Màu sắc Body*/
+/*Định dạng cho footer*/
+.footer{
+  background-color: rgb(203, 233, 241);
+  text-align: center;
+  font-size: 25px; /*cỡ chữ trong footer*/
+}
+/**/
+#table{
+    box-sizing: border-box;/*box-sizing:border-box;bao gồm cả 2 phần : đệm và chiều cao để tất cả table có cùng kích thứơc*/
+    padding: 15px;
+    width: 100%;
+    background-color:  rgb(203, 233, 241);
+  }
+  
+  table, th, td{
+    text-align: center;
+    border: 2px rgb(124, 116, 116) ; /* Màu sắc và kích thước đường viền*/
+    border-style: outset;  /* đường biên giới */
+    padding: 5px;
+  }
+  /*định dạng ô*/
+  tr{
+    display: table-row;/*lấy giá trị ngay tại ô chữ*/
+    background-color: #f8e3e3;
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+  }
+  /*Lấy dữ liệu các ô data-name='info'*/
+  tr[data-name=info]{
+    background-color: rgb(94, 191, 248);
+    font-size: 30px;
+  }
+  /*Định dạng tất cả các thành phần trong bảng*/
+  table{
+    width: 100%;
+    margin: 0px auto;
+    border-spacing: 5px;/*khoảng cách đường viền*/
+  }
+  /*Định dạng các ô input với type="number"*/
+  input[type="number"]{
+    width: 90%;
+  }
+  input[type="checkbox"]{
+    transform: scale(1.5,1.5);/*căn chỉnh checkbox theo tọa độ*/
+  }
+  #header{
+    text-align: center;
+    font-size: 25px;
+  }
+  /*Định dạng chữ Bán Hàng*/
+  #header>h1{
+    font-size: 40px;
+    color: rgb(248, 4, 4);
+  }
+  #header>select{
+    width: 150px;/*kích thước ô Mức Giá */
+    height: 30px;/*chiều cao ô Mức Giá */
+    border-style: outset ; /*đường viền ô Mức Giá */
+    border: 2px ;
+    
+  } 
+  #header>hr{
+    width: 80%;
+    border: 1px solid rgb(27, 28, 31);
+  } /* Đường gạch ngang*/
