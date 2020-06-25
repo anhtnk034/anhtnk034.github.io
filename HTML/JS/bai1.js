@@ -20,22 +20,27 @@ function prev() {
     }
     slider.src = images[num];
 }
-let listPicture = document.querySelector(".picture")
-let picture = "Ảnh" + i + "/20";
-function TC(){
-    listPicture.forEach(p =>{
-        p.innerHTML = picture;
-    })
-    let i = 0;
-    if (i <= images.length){
-        i +=1;
-        document.getElementById('picture').innerHTML = picture;
-    }
-}
+// let listC = document.querySelectorAll("button");
+// let listPicture = document.querySelector(".picture")
+// let picture = "Ảnh" + i + "/20";
+// function TC(){
+//     listPicture.forEach(p =>{
+//         listC.addEventListener("click", function(){
+//             listPicture.forEach(p =>{
+//                 let i = 0;
+//                 if (i <= images.length){
+//                     i +=1;
+//                     document.getElementById('picture').innerText = picture;
+//                 }
+//             })
+//         })
+//     })
+    
+// }
 
 
 
 
-    // var a = "ẢNH "+ i+"/ 20";
-    // document.getElementById('picture').innerText = a;
+var a = "ẢNH "+ i+"/ 20";
+document.getElementById('picture').innerText = a;
 

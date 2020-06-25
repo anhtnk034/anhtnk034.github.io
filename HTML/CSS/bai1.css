@@ -24,18 +24,18 @@ img{
     border-radius: 30px;
     
 }
-img {
-    filter: brightness(0.92) contrast(2.8);
+img {/* độ sáng của hình ảnh*/
+    filter: brightness(0.8) contrast(3.8);
   }
    
   figure:before {
     z-index: 2;
     mix-blend-mode: multiply;
-    box-shadow: 0 0 100px rgba(100, 150, 200, 1) inset, 0 0 300px rgba(100, 150, 200, 1) inset;
+    box-shadow: 0 0 100px rgba(100, 150, 200, 1) inset, 0 0 300px rgb(100, 158, 216) inset;
   }
    
   figure:after {
-    z-index: 5;
+    z-index: 3;
     mix-blend-mode: difference;
     background: rgba(0, 0, 255, 0.3);
   }
