@@ -63,8 +63,10 @@ span {
 ----------------------------------------------------- */
 
 .wrapper {
-    display: flex;
+    /*display: flex;*/
     align-items: stretch;
+    display: block;
+    
 }
 
 #sidebar {
@@ -210,8 +212,8 @@ a.article:hover {
 
 @media (max-width: 768px) {
     #sidebar {
-        min-width: 80px;
-        max-width: 80px;
+        min-width: 95px;
+        max-width: 95px;
         text-align: center;
         margin-left: -80px !important;
     }
