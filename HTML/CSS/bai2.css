@@ -1,9 +1,12 @@
+body{
+  display: block;
+}
 #form{
     box-sizing: border-box;/*box-sizing:border-box;bao gồm cả 2 phần : đệm và chiều cao để tất cả table có cùng kích thứơc*/
     position: relative;/**/
-    width: 50%;
-    height: 1050px;
-    margin: 0 auto;
+    width: 1000px;
+    height: 1350px;
+    margin-top: -10px auto;
     background-size: cover;
     background-position: center;/**/
   }
@@ -13,8 +16,8 @@
   form{
     width: 95%;
     height: auto;
-    top: 50%;
-    left: 50%;
+    top: 630px;
+    left: 60%;
     transform: translate(-50%, -50%);/*vị trí so với form*/
     background-color: rgba(224, 149, 149, 0.7);
     border-radius: 10px;

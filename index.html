@@ -12,6 +12,7 @@
     <!-- Our Custom CSS -->
     <link rel="stylesheet" href="index.css">
     <link rel="stylesheet" href="HTML/CSS/style1.css">
+    <link rel="stylesheet" href="HTML/CSS/bai2.css">
     <!-- Font Awesome JS -->
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/solid.js" integrity="sha384-tzzSw1/Vo+0N5UhStP3bvwWPq+uvzCMfrN1fEFe+xBmv1C/AtVX5K0uZtmcHitFZ" crossorigin="anonymous"></script>
     <script defer src="https://use.fontawesome.com/releases/v5.0.13/js/fontawesome.js" integrity="sha384-6OIrr52G08NpOFSZdxxz1xdNSndlD4vdcf/q2myIUVO0VsqaGHJsB0RaBE01VTOY" crossorigin="anonymous"></script>
@@ -58,11 +59,11 @@
                     </li>
                     
                 </ul>
-                <form class="form-inline" action="/action_page.php">
+                <!--<form class="form-inline" action="/action_page.php">
                     <input class="form-control mr-sm-2" type="text" placeholder="Search">
                     <button class="btn btn-success" type="submit">Search</button>
                 </form>
-                <!-- <button type="button" id="sidebarCollapse" class="btn btn-info">
+                <button type="button" id="sidebarCollapse" class="btn btn-info">
                     <i class="fas fa-align-left"></i>
                     <span>TNK</span>
                 </button>
@@ -101,39 +102,15 @@
                 </div>
             </nav>
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
-                <div class="card  col-sm-4" style="width:320px">
-                  <div class="key">
-                    <div data-key="1">
-                      <kbd>A</kbd>
-                      <span class="sound">clap</span>
+                <div >
+                  <div class="clock">
+                    <div class="clock-face">
+                      <div class="hand hour-hand"></div>
+                      <div class="hand min-hand"></div>
+                      <div class="hand second-hand"></div>
                     </div>
-                    <div data-key="1">
-                      <kbd>B</kbd>
-                      <span class="sound">Blook</span>
-                    </div>
-                    <div data-key="1">
-                      <kbd>C</kbd>
-                      <span class="sound">Cisco</span>
-                    </div>
-                    <div data-key="1">
-                      <kbd>D</kbd>
-                      <span class="sound">Denta</span>
-                    </div>
-                    <div data-key="1">
-                      <kbd>E</kbd>
-                      <span class="sound">Elatic</span>
-                    </div>
-
-                    <audio data-key="1" src="HTML/sound/01 Track 1.wma"></audio>
-                    <audio data-key="1" src="HTML/sound/01 Track 1.wma"></audio>
-                    <audio data-key="1" src="HTML/sound/01 Track 1.wma"></audio>
-                    <audio data-key="1" src="HTML/sound/01 Track 1.wma"></audio>
-                    <audio data-key="1" src="HTML/sound/01 Track 1.wma"></audio>
-                    
-
-
                   </div>
-                    <!--<a href="HTML/bai1.html">
+                                      <!--<a href="HTML/bai1.html">
                       <img class="card-img-top" src="#" alt="Card image" style="width:85%" height="250px">
                     </a>
                     <div class="card-body">
@@ -145,7 +122,101 @@
                 </div>
                 <br>   
             </nav>
-            
+            <nav class="navbar navbar-expand-lg navbar-light bg-light">
+              <div >
+                  <div class="container">
+                      <section id="form">
+                          <form onsubmit="return KTForm()">
+                              <h1>ĐĂNG KÝ THÀNH VIÊN</h1>
+                              <p>
+                                  <label for="mssv">Mã sinh viên</label>
+                              </p>
+                              <input id="mssv" type="text" name="mssv"  autocomplete="off" >
+                              <span class="Error" data-name="mssv"></span>
+                  
+                              <p>
+                                  <label for="fullname">Họ và tên</label>
+                              </p>
+                              <input id="fullname" type="text" name="fullname" pattern="[^0-9]{1,}" title="Tên không chứa số" autocomplete="off">
+                              <span class="Error" data-name="fullname"></span>
+                  
+                              <p>
+                                  <label for="mail">Email</label>
+                              </p>
+                              <input id="mail" type="text" name="mail" pattern="[a-z0-9A-Z]+@[a-z0-9A-Z]+\.[a-z]{2,}$" title="Mail không được có ký tự đặc biệt" autocomplete="off">
+                              <span class="Error" data-name="mail"></span>
+                  
+                              <p>
+                                  <label for="gioitinh">Giới tính</label>
+                              </p>
+                              <div id="gioitinh" name="gioitinh">
+                                  <input type="radio" name="gioitinh" id="male" autocomplete="off">
+                                  <label for="male">Nam</label>
+                                  <input type="radio" name="gioitinh" id="female" autocomplete="off">
+                                  <label for="female">Nữ</label>
+                              </div>
+                              <span class="Error" data-name="gioitinh"></span>
+                              <p>
+                                  <label for="hobbies" name="hobby">Sở thích</label>
+                              </p>
+                              
+                              <div id="hobbies">
+                                  <input type="checkbox" name="hobby" id="book" autocomplete="off">
+                                  <label for="book">Đọc sách</label>
+                  
+                                  <input type="checkbox" name="hobby" id="travel" autocomplete="off">
+                                  <label for="travel">Du lịch</label>
+                  
+                                  <input type="checkbox" name="hobby" id="music" autocomplete="off">
+                                  <label for="music">Nghe nhạc</label>
+                  
+                                  <input type="checkbox" name="hobby" id="food" autocomplete="off">
+                                  <label for="food">Ẩm thực</label>
+                  
+                                  <input type="checkbox" name="hobby" id="other-hobby" autocomplete="off">
+                                  <label for="other-hobby">Khác</label>
+                              </div>
+                  
+                              <div id="other-checked" style="display: none;">
+                                  <label>Sở thích khác của bạn là gì:</label>
+                                  <input type="text" name="hobby" pattern="[a-zA-Z][^0-9]{1,}" autocomplete="off">
+                              </div>
+                              <span class="Error" data-name="hobby"></span>
+                  
+                              <p>
+                                  <label for="national">Quốc Tịch</label>
+                              </p>
+                              <select name="national">
+                                  <option class="ative">Chọn quốc tịch</option>
+                                  <li role="presentation" class="divider"></li>
+                                  <option>Việt Nam</option>
+                                  <option>Lào</option>
+                                  <option>Campuchia</option>
+                                  <option>Thái Lan</option>
+                                  <option>Đông Ti Mo</option>
+                                  <option>Philippin</option>
+                                  <option>Bry-nây</option>
+                                  <option>Indonexia</option>
+                                  <option>Malaysia</option>
+                                  <option>Mianma</option>
+                                  <option>Singapur</option>
+                              </select>
+                  
+                              <p>
+                                  <label for="note">Ghi Chú</label>
+                              </p>
+                              <textarea name="note" rows="5" id="note"></textarea>
+                              <span class="Error" data-name="note"></span>
+                  
+                              <div>
+                                  <button type="submit" id="subscribe">Đăng Ký</button>
+                              </div>
+                  
+                          </form>
+                      </section>
+                    </div>
+            </div>
+            </nav>
             <!--<nav class="navbar navbar-expand-lg navbar-light bg-light">
               <div class="card col-sm-4" style="width:320px">
                   <img class="card-img-top" src="images/a3.jpg" alt="Card image" style="width:100%" height="250px">
@@ -282,6 +353,33 @@
     <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous">
     </script>
+    <script src="HTML/JS/bai2.js"></script>
+    <script>
+      const secondHand = document.querySelector('.second-hand');
+      const minsHand = document.querySelector('.min-hand');
+      const hourHand = document.querySelector('.hour-hand');
+    
+      function setDate() {
+        const now = new Date();
+    
+        const seconds = now.getSeconds();
+        const secondsDegrees = ((seconds / 60) * 360) + 90;
+        secondHand.style.transform = `rotate(${secondsDegrees}deg)`;
+    
+        const mins = now.getMinutes();
+        const minsDegrees = ((mins / 60) * 360) + ((seconds/60)*6) + 90;
+        minsHand.style.transform = `rotate(${minsDegrees}deg)`;
+    
+        const hour = now.getHours();
+        const hourDegrees = ((hour / 12) * 360) + ((mins/60)*30) + 90;
+        hourHand.style.transform = `rotate(${hourDegrees}deg)`;
+      }
+    
+      setInterval(setDate, 1000);
+    
+      setDate();
+    
+    </script>
         <!-- <script type="text/javascript">
           $(document).ready(function () {
               $('#sidebarCollapse').on('click', function () {
@@ -289,10 +387,11 @@
               });
           });
       </script> -->
-    <script>
+    <!--<script>
         function removeTransition(e) {
           if (e.propertyName !== 'transform') return;
-          e.target.classList.remove('playing');
+          e.target.classList.remove('playing');// neu ten cua e khac tranform thi return
+          // e. target.cl
         }
       
         function playSound(e) {
@@ -308,6 +407,6 @@
         const keys = Array.from(document.querySelectorAll('.key'));
         keys.forEach(key => key.addEventListener('transitionend', removeTransition));
         window.addEventListener('keydown', playSound);
-    </script>
+    </script>-->
     </body>
 </html>
